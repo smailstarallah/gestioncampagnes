@@ -16,8 +16,9 @@ public class ServiceDonImpl implements ServiceDon {
     DonationRepository donRepository;
     CampagneRepository campagneRepository;
 
-    public ServiceDonImpl(DonationRepository donRepository) {
+    public ServiceDonImpl(DonationRepository donRepository, CampagneRepository campagneRepository) {
         this.donRepository = donRepository;
+        this.campagneRepository = campagneRepository;
     }
 
     @Override

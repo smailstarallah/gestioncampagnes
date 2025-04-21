@@ -21,6 +21,6 @@ public class GestioncampagnesApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        campagneRepository.save(new Campagne(null, "Campagne 1", BigDecimal.valueOf(1000000), new Date(), new Date(System.currentTimeMillis() + 365L * 24 * 60 * 60 * 1000)));
+        campagneRepository.save(new Campagne(null, "Campagne", BigDecimal.valueOf(1000000), new Date(), new Date(System.currentTimeMillis() + 365L * 24 * 60 * 60 * 1000)));
     }
 }

@@ -29,7 +29,7 @@ public class CampagneController {
     }
 
     @PostMapping("/{id}/dons")
-    public void getAllDonsByCampagneId(@PathVariable Long id, @Valid @RequestBody DonDTO donDTO) {
+    public void makeDon(@PathVariable Long id, @Valid @RequestBody DonDTO donDTO) {
         donDTO.setNomCampagne(campagneRepository.findById(id).get().getNom());
          serviceDon.save(donDTO);
     }
